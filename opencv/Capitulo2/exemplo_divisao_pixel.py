@@ -11,3 +11,4 @@ for y in range(0, img.shape[0]): # Percorre todas as linhas da matriz da imagem
 # Exibe a Imagem alterada e espera o usuario apertar uma tecla
 cv2.imshow("Imagem modificada", img)
 cv2.waitKey(0)
+cv2.imwrite("output/modulo_pixel.jpg", img)

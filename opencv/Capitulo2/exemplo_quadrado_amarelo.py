@@ -10,3 +10,4 @@ for y in range(0, img.shape[0], 10): # percorre linhas, pulando de 10 em 10
 # Exibe a Imagem alterada e espera o usuario apertar uma tecla
 cv2.imshow("img modificada", img)
 cv2.waitKey(0) 
+cv2.imwrite("output/yellow_square.jpg", img)

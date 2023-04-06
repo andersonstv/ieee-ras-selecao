@@ -24,4 +24,4 @@ cv2.imshow('Janela Imagem', img) # Exibe a Imagem em uma nova janela
 cv2.waitKey(0) # Espera o usuario pressionar alguma tecla
 
 
-cv2.imwrite("saida.jpg", img) # Salva a imagem no disco com o nome saida.jpg
+cv2.imwrite("output/saida.jpg", img) # Salva a imagem no disco com o nome saida.jpg

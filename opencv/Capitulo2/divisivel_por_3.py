@@ -14,3 +14,4 @@ for y in range(0, img.shape[0]): # Percorre todas as linhas da matriz da imagem
 # Exibe a Imagem apos substituir os pixels por azul 
 cv2.imshow("Imagem modificada", img)
 cv2.waitKey(0) # Espera o usuario pressionar alguma tecla
+cv2.imwrite("output/div3.jpg", img)
