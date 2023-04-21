@@ -26,7 +26,7 @@ options = HandLandmarkerOptions(
 
 landmarker = HandLandmarker.create_from_options(options)
 
-img = mp.Image.create_from_file("hand-sample-images\\2.jpeg")
+img = mp.Image.create_from_file("hand-sample-images\\left_2.jpeg")
 landmark_result = landmarker.detect(img)
 
 annotated_image = draw_landmarks_on_image(img.numpy_view(), landmark_result)
@@ -34,6 +34,8 @@ annotated_image_cv = cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR)
 
 # Permite reajustar o tamanho da janela de exibicao do OpenCV
 cv2.namedWindow("Imagem", cv2.WINDOW_NORMAL)
+
+print(landmark_result)
 
 # Exibe a imagem resultante
 cv2.imshow("Imagem", annotated_image_cv)
